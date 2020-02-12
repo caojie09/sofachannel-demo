@@ -140,6 +140,11 @@ git clone https://github.com/caojie09/sofachannel-demo.git
 
 ![image.png](https://gw.alipayobjects.com/mdn/rms_c69e1f/afts/img/A*fbgOSpPdAIkAAAAAAAAAAABkARQnAQ)
 
+dynamic-stock-mng 会被打包成一个 ark biz 可执行包，如下图所示：
+
+![image.png](https://gw.alipayobjects.com/mdn/rms_c69e1f/afts/img/A*11DgTaU4BhMAAAAAAAAAAABkARQnAQ)
+
+
 #### 启动宿主应用
 
 ```bash
@@ -207,6 +212,6 @@ Start to process switch command now, pls wait and check.
 
 切换完模块后，访问 http://localhost:8080 ，现在展示的是列表编程按照销量进行排序，如下所示：
 
-![image.png](https://gw.alipayobjects.com/mdn/rms_c69e1f/afts/img/A*cY_iQJP3xscAAAAAAAAAAABkARQnAQ)
+![image.png](https://gw.alipayobjects.com/mdn/rms_c69e1f/afts/img/A*vqEJQ4775u4AAAAAAAAAAABkARQnAQ)
 
 
