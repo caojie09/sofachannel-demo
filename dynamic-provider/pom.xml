@@ -24,14 +24,19 @@
             <groupId>com.alipay.sofa</groupId>
             <artifactId>healthcheck-sofa-boot-starter</artifactId>
         </dependency>
+
         <dependency>
-            <artifactId>curator-client</artifactId>
-            <groupId>org.apache.curator</groupId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <artifactId>curator-framework</artifactId>
-            <groupId>org.apache.curator</groupId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <artifactId>curator-client</artifactId>-->
+<!--            <groupId>org.apache.curator</groupId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <artifactId>curator-framework</artifactId>-->
+<!--            <groupId>org.apache.curator</groupId>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
