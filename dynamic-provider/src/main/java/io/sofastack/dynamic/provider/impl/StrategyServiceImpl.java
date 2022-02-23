@@ -16,6 +16,12 @@ import java.util.List;
 @Service
 @SofaService
 public class StrategyServiceImpl implements StrategyService {
+
+    @Override
+    public String message() {
+        return "StrategyService";
+    }
+
     @Override
     public List<ProductInfo> strategy(List<ProductInfo> products) {
         return products;

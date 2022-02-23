@@ -11,5 +11,8 @@ import java.util.List;
  * @since 2020/2/11
  */
 public interface StrategyService {
+
+    String message();
+
     List<ProductInfo> strategy(List<ProductInfo> products);
 }

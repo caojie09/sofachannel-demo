@@ -19,7 +19,7 @@ public class IndexController {
 
     @RequestMapping("/dynamicProvider")
     public String index() {
-        return "hello index";
+        return strategyService.message();
     }
 
 

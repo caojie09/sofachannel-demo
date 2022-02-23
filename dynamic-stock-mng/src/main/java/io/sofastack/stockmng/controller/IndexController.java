@@ -7,6 +7,7 @@ import io.sofastack.stockmng.data.DatabaseSeed;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +27,12 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("productList", strategyService.strategy(initProducts()));
         return "index";
+    }
+
+    @ResponseBody
+    @RequestMapping("/message")
+    public String message() {
+        return strategyService.message();
     }
 
     /**

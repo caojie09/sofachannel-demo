@@ -29,14 +29,23 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <artifactId>curator-client</artifactId>-->
-<!--            <groupId>org.apache.curator</groupId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <artifactId>curator-framework</artifactId>-->
-<!--            <groupId>org.apache.curator</groupId>-->
-<!--        </dependency>-->
+        <dependency>
+            <artifactId>curator-client</artifactId>
+            <groupId>org.apache.curator</groupId>
+        </dependency>
+        <dependency>
+            <artifactId>curator-framework</artifactId>
+            <groupId>org.apache.curator</groupId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>sofa-ark-springboot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>web-ark-plugin</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -53,6 +62,7 @@
                         </goals>
                         <!--ark-biz 包的打包配置  -->
                         <configuration>
+                            <webContextPath>/demo</webContextPath>
                             <!--是否打包、安装和发布 ark biz，详细参考 Ark Biz 文档，默认为false-->
                             <attach>true</attach>
                             <!--ark 包和 ark biz 的打包存放目录，默认为工程 build 目录-->
