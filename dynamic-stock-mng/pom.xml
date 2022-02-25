@@ -19,10 +19,6 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.alipay.sofa</groupId>-->
-<!--            <artifactId>isle-sofa-boot-starter</artifactId>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>runtime-sofa-boot-starter</artifactId>
@@ -40,21 +36,13 @@
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-ark-springboot-starter</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.alipay.sofa</groupId>-->
-<!--            <artifactId>web-ark-plugin</artifactId>-->
-<!--        </dependency>-->
+
         <dependency>
             <groupId>io.sofastack</groupId>
             <artifactId>dynamic-provider</artifactId>
             <version>1.0.0</version>
             <classifier>ark-biz</classifier>
         </dependency>
-
-
-
-
-
 
     </dependencies>
 

@@ -15,11 +15,19 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @Autowired
+    private DemoRepository demoRepository;
+
+    @Autowired
     private StrategyService strategyService;
 
     @RequestMapping("/dynamicProvider")
     public String index() {
         return strategyService.message();
+    }
+
+    @RequestMapping("/count")
+    public Long count() {
+        return demoRepository.count();
     }
 
 
