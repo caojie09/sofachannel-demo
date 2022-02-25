@@ -21,7 +21,7 @@
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
-            <artifactId>runtime-sofa-boot-starter</artifactId>
+            <artifactId>runtime-sofa-boot-plugin</artifactId>
         </dependency>
         <dependency>
             <groupId>io.sofastack</groupId>
