@@ -51,14 +51,6 @@
             <artifactId>healthcheck-sofa-boot-starter</artifactId>
         </dependency>
 
-        <dependency>
-            <artifactId>curator-client</artifactId>
-            <groupId>org.apache.curator</groupId>
-        </dependency>
-        <dependency>
-            <artifactId>curator-framework</artifactId>
-            <groupId>org.apache.curator</groupId>
-        </dependency>
     </dependencies>
 
     <build>
