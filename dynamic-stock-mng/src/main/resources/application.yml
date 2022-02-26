@@ -18,23 +18,23 @@ com.alipay.sofa.boot.skip-jvm-reference-health-check: true
 spring:
   jmx:
     enabled: false
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://152.168.170.220:5432/gdc-uid?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
-    username: postgres
-    password: postgres
-    hikari:
-      maxLifetime: 170000
-      minimum-idle: 5
-      maximum-pool-size: 30
-      idleTimeout: 120000
-      connectionTimeout: 30000
-      validationTimeout: 5000
-      transaction-isolation: TRANSACTION_READ_COMMITTED
-  jpa:
-    databasePlatform: org.hibernate.dialect.PostgreSQL82Dialect
-    show-sql: true
-    properties:
-      hibernate.temp.use_jdbc_metadata_defaults: false
-      hibernate.cache.use_second_level_cache: false
-      hibernate.cache.use_query_cache: false
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://152.168.170.220:5432/gdc-uid?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+#    username: postgres
+#    password: postgres
+#    hikari:
+#      maxLifetime: 170000
+#      minimum-idle: 5
+#      maximum-pool-size: 30
+#      idleTimeout: 120000
+#      connectionTimeout: 30000
+#      validationTimeout: 5000
+#      transaction-isolation: TRANSACTION_READ_COMMITTED
+#  jpa:
+#    databasePlatform: org.hibernate.dialect.PostgreSQL82Dialect
+#    show-sql: true
+#    properties:
+#      hibernate.temp.use_jdbc_metadata_defaults: false
+#      hibernate.cache.use_second_level_cache: false
+#      hibernate.cache.use_query_cache: false
