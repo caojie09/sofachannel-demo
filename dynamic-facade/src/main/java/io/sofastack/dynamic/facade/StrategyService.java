@@ -15,4 +15,6 @@ public interface StrategyService {
     String message();
 
     List<ProductInfo> strategy(List<ProductInfo> products);
+
+    Long count();
 }

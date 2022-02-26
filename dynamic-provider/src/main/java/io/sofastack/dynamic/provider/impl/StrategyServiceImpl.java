@@ -3,6 +3,8 @@ package io.sofastack.dynamic.provider.impl;
 import com.alipay.sofa.runtime.api.annotation.SofaService;
 import io.sofastack.dynamic.facade.StrategyService;
 import io.sofastack.dynamic.model.ProductInfo;
+import io.sofastack.dynamic.provider.DemoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +19,9 @@ import java.util.List;
 @SofaService
 public class StrategyServiceImpl implements StrategyService {
 
+    @Autowired
+    private DemoRepository demoRepository;
+
     @Override
     public String message() {
         return "StrategyService";
@@ -25,5 +30,10 @@ public class StrategyServiceImpl implements StrategyService {
     @Override
     public List<ProductInfo> strategy(List<ProductInfo> products) {
         return products;
+    }
+
+    @Override
+    public Long count() {
+        return demoRepository.count();
     }
 }

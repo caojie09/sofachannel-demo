@@ -35,6 +35,12 @@ public class IndexController {
         return strategyService.message();
     }
 
+    @ResponseBody
+    @RequestMapping("/count")
+    public Long count() {
+        return strategyService.count();
+    }
+
     /**
      * 初始化默认展示列表,为了实验效果，此处初始化的列表与实际列表是相反的，但是实际排序结果与现场购买订单直接挂钩
      *

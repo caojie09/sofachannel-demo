@@ -12,16 +12,27 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
-            <artifactId>runtime-sofa-boot-plugin</artifactId>
+            <artifactId>runtime-sofa-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>io.sofastack</groupId>
@@ -35,6 +46,10 @@
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-ark-springboot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>web-ark-plugin</artifactId>
         </dependency>
 
         <dependency>
@@ -61,7 +76,8 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <priority>100</priority>
+                    <webContextPath>/</webContextPath>
+<!--                    <priority>100</priority>-->
                     <baseDir>../</baseDir>
                     <bizName>stock-mng</bizName>
                 </configuration>
