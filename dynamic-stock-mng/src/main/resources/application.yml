@@ -16,9 +16,11 @@ spring.application.name: stock-mng
 com.alipay.sofa.boot.skip-jvm-reference-health-check: true
 
 spring:
+  jmx:
+    enabled: false
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://152.168.170.220:5432/export?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    url: jdbc:postgresql://152.168.170.220:5432/gdc-uid?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
     username: postgres
     password: postgres
     hikari:

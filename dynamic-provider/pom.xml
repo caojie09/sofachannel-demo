@@ -82,6 +82,22 @@
                     </execution>
                 </executions>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>com.alipay.sofa</groupId>-->
+<!--                <artifactId>sofa-ark-plugin-maven-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>default-cli</id>-->
+<!--                        <goals>-->
+<!--                            <goal>ark-plugin</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            &lt;!&ndash;specify destination where ark-plugin will be saved, default saved to ${project.build.directory}&ndash;&gt;-->
+<!--                            <outputDirectory>target</outputDirectory>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 </project>
