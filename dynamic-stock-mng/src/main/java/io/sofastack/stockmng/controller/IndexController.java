@@ -20,6 +20,7 @@ import java.util.List;
  */
 @Controller
 public class IndexController {
+
     @SofaReference
     private StrategyService strategyService;
 

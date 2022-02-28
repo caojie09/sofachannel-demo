@@ -72,8 +72,7 @@
                             <attach>true</attach>
                             <!--ark 包和 ark biz 的打包存放目录，默认为工程 build 目录-->
                             <outputDirectory>target</outputDirectory>
-                            <!--default none-->
-                            <arkClassifier>executable-ark</arkClassifier>
+                            <skipArkExecutable>true</skipArkExecutable>
                             <!-- ark-biz 包的启动优先级，值越小，优先级越高-->
                             <priority>200</priority>
                             <!--设置应用的根目录，用于读取 ${base.dir}/conf/ark/bootstrap.application 配置文件，默认为 ${project.basedir}-->
