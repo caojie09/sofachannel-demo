@@ -30,16 +30,12 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-ark-springboot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alipay.sofa</groupId>
-            <artifactId>web-ark-plugin</artifactId>
         </dependency>
 
         <dependency>
@@ -50,7 +46,6 @@
             <groupId>com.alipay.sofa</groupId>
             <artifactId>healthcheck-sofa-boot-starter</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>
