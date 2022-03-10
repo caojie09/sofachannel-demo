@@ -1,23 +1,16 @@
-server.port: 8080
-
-# logging
-logging.level.io.sofastack: INFO
-logging.path: ./logs/stock-mng
-# thymeleaf
-spring.thymeleaf.cache: false
-spring.thymeleaf.prefix: classpath:/templates/
-spring.thymeleaf.check-template-location: true
-spring.thymeleaf.suffix: .html
-spring.thymeleaf.encoding: UTF-8
-spring.thymeleaf.mode: HTML5
-
-spring.application.name: stock-mng
-
-com.alipay.sofa.boot.skip-jvm-reference-health-check: true
+server:
+  port: 8080
 
 spring:
-  jmx:
-    enabled: false
+  application:
+    name: stock-mng
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://152.168.170.220:5432/gdc-uid?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
@@ -38,3 +31,9 @@ spring:
       hibernate.temp.use_jdbc_metadata_defaults: false
       hibernate.cache.use_second_level_cache: false
       hibernate.cache.use_query_cache: false
+
+logging:
+  path: ./logs/stock-mng
+
+com.alipay.sofa.boot:
+  skip-jvm-reference-health-check: true
